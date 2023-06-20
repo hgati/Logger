@@ -2,7 +2,7 @@
 
 This package allows you to send logs to files. based on [monolog/monolog](https://github.com/Seldaek/monolog).
 You can use it during your development to make debugging easier.
-The file are in the var / log folder.
+The file are in the var/log folder. the name is logger.log by default.
 This package is recommended for magento 2. 
 
 ## Badges
@@ -41,15 +41,15 @@ try {
 From 1.1.2 you can use the magic log method below examples
 
 ```php
-log('Hello!!', 'test.log');
-log('Hello!!', 'test.log', \Monolog\Logger::WARNING);
-log([22 => 'is an array'], 'test.log');
-log(['is an array'], 'test.log', \Monolog\Logger::INFO);
+_log('Hello!!', 'test.log');
+_log('Hello!!', 'test.log', \Monolog\Logger::WARNING);
+_log([22 => 'is an array'], 'test.log');
+_log(['is an array'], 'test.log', \Monolog\Logger::INFO);
 
 try {
     throw new \Exception('Error message');
 } catch (\Exception $exception) {
-    log($exception);
+    _log($exception);
 }
 ```
 
