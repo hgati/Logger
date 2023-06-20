@@ -5,7 +5,7 @@
  * @copyright   Copyright (c) 2022 CleatSquad, Inc. (https://www.cleatsquad.com)
  */
 
-if (!function_exists('log')) {
+if (!function_exists('_log')) {
     /**
      * Send log to the defined file in var/log
      *
@@ -15,7 +15,7 @@ if (!function_exists('log')) {
      * @throws \Exception                If a missing directory is not buildable
      * @throws \InvalidArgumentException If stream is not a resource or string
      */
-    function log($text, string $filename = 'logger.log', int $type = LoggerHandler::DEBUG): void
+    function _log($text, string $filename = 'logger.log', int $type = \Monolog\Logger::DEBUG): void
     {
         \CleatSquad\Logger::log($text, $filename, $type);
     }
