@@ -18,7 +18,7 @@ This package is recommended for magento 2.
 
 Add dependency
 ```
-composer require cleatsquad/logger ^1.1
+composer require hgati/logger ^1.1
 ```
 
 ## Examples
