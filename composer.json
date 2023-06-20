@@ -1,5 +1,5 @@
 {
-    "name": "cleatsquad/logger",
+    "name": "hgati/logger",
     "type": "library",
     "description": "Custom logger based in monolog",
     "require": {
