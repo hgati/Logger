@@ -61,8 +61,8 @@ try {
 ```
 [2021-11-21 14:17:44] logger.DEBUG: Hello!! [] []
 [2021-11-21 14:17:44] logger.WARNING: Hello!! [] []
-[2021-11-21 14:17:44] logger.DEBUG: Array (     [22] => is an array )  [] []
-[2021-11-21 14:17:44] logger.INFO: Array (     [0] => is an array )  [] []
+[2021-11-21 14:17:44] logger.DEBUG: Array (  [22] => is an array )  [] []
+[2021-11-21 14:17:44] logger.INFO: Array (  [0] => is an array )  [] []
 ```
 
 ```
