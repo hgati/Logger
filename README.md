@@ -1,4 +1,4 @@
-# Custom Logger
+# Custom Logger for Magento 2 - Alternative Mage::log()
 
 This package allows you to send logs to files. based on [monolog/monolog](https://github.com/Seldaek/monolog).
 You can use it during your development to make debugging easier.
