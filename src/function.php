@@ -17,6 +17,9 @@ if (!function_exists('_log')) {
      */
     function _log($text, string $filename = 'logger.log', int $type = \Monolog\Logger::DEBUG): void
     {
+        $original_timezone = date_default_timezone_get();
+        date_default_timezone_set('Asia/Seoul');
         \CleatSquad\Logger::log($text, $filename, $type);
+        date_default_timezone_set($original_timezone);
     }
 }
