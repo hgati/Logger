@@ -51,7 +51,10 @@ class Logger
             }
 
             $logger = self::prepareLog($filename, $type);
+            $original_timezone = date_default_timezone_get();
+            date_default_timezone_set('Asia/Seoul');
             $logger->log($type, $text);
+            date_default_timezone_set($original_timezone);
         }
     }
 
