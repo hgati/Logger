@@ -52,7 +52,10 @@ class Logger
 
             $logger = self::prepareLog($filename, $type);
             $logger->log($type, $text);
+            return;
         }
+        $logger = self::prepareLog($filename, $type);
+        $logger->log($type, var_export($text, true));
     }
 
     /**
